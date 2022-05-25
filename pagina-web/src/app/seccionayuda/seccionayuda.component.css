@@ -1,0 +1,50 @@
+body {
+    margin: 0%;
+    padding: 0%;
+  
+  }
+.arriba{
+    height: 49;
+    width: 100%;  
+}
+
+.abajo{
+    height: 49;
+    width: 100%; 
+}
+  .uno{
+    float:left;
+    height: 49;
+    width: 24%;
+    text-align: center;
+  
+  }
+  .dos{
+    float:right;
+    height: 49;
+    width: 33%;
+    text-align: center;
+  
+  }
+  .tres{
+
+    height: 30;
+    width: 33%;
+    text-align: center;
+  
+  }
+
+  .paginanombre{
+    height: 30;
+    width: 100%;
+    text-align: center;
+  }
+  .paginanombredos{
+    height: 30;
+    width: 100%;
+    text-align: center;
+  }
+  #pantalladiv{
+    display: flex;
+  }
+ 
