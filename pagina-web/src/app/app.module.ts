@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { InfopaginaComponent } from './infopagina/infopagina.component';
 import { FooterComponent } from './footer/footer.component';
 import { SeccionayudaComponent } from './seccionayuda/seccionayuda.component';
+import { app_routing } from './app.rutas';
+import { EjemplosproductosComponent } from './ejemplosproductos/ejemplosproductos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,10 +16,12 @@ import { SeccionayudaComponent } from './seccionayuda/seccionayuda.component';
     HeaderComponent,
     InfopaginaComponent,
     FooterComponent,
-    SeccionayudaComponent
+    SeccionayudaComponent,
+    EjemplosproductosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]

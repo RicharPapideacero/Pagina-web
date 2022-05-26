@@ -1,0 +1,26 @@
+
+
+.paginanombre {
+    height: 30;
+    width: 100%;
+    text-align: center;
+}
+
+.paginanombredos {
+    height: 30;
+    width: 100%;
+    text-align: center;
+}
+
+.arriba {
+    height: 49;
+    width: 100%;
+}
+
+.uno {
+    float: left;
+    height: 49;
+    width: 24%;
+    text-align: center;
+
+}
