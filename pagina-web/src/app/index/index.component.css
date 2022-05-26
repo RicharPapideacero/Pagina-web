@@ -18,9 +18,16 @@
 }
 
 .uno {
-    float: left;
+    float: right;
     height: 49;
     width: 24%;
     text-align: center;
 
 }
+.tres{
+
+    height: 49;
+    width: 24%;
+    text-align: center;
+  
+  }

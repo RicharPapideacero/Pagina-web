@@ -8,7 +8,10 @@ import { InfopaginaComponent } from './infopagina/infopagina.component';
 import { FooterComponent } from './footer/footer.component';
 import { SeccionayudaComponent } from './seccionayuda/seccionayuda.component';
 import { app_routing } from './app.rutas';
-import { EjemplosproductosComponent } from './ejemplosproductos/ejemplosproductos.component';
+import { ProductunoComponent } from './Ejemplos productos/productuno/productuno.component';
+import { ProductdosComponent } from './Ejemplos productos/productdos/productdos.component';
+import { ProducttresComponent } from './Ejemplos productos/producttres/producttres.component';
+import { ProductcuatroComponent } from './Ejemplos productos/productcuatro/productcuatro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,10 @@ import { EjemplosproductosComponent } from './ejemplosproductos/ejemplosproducto
     InfopaginaComponent,
     FooterComponent,
     SeccionayudaComponent,
-    EjemplosproductosComponent
+    ProductunoComponent,
+    ProductdosComponent,
+    ProducttresComponent,
+    ProductcuatroComponent
   ],
   imports: [
     BrowserModule,
