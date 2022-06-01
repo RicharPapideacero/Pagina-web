@@ -17,6 +17,10 @@ import { ProductseisComponent } from './Ejemplos productos/productseis/productse
 import { ProductsieteComponent } from './Ejemplos productos/productsiete/productsiete.component';
 import { ProductochoComponent } from './Ejemplos productos/productocho/productocho.component';
 import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
+import { ProductonueveComponent } from './Ejemplos productos/productonueve/productonueve.component';
+import { ProductodiesComponent } from './Ejemplos productos/productodies/productodies.component';
+import { ProductoonceComponent } from './Ejemplos productos/productoonce/productoonce.component';
+import { ProductodoceComponent } from './Ejemplos productos/productodoce/productodoce.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +37,11 @@ import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
     ProductseisComponent,
     ProductsieteComponent,
     ProductochoComponent,
-    IniciosesionComponent
+    IniciosesionComponent,
+    ProductonueveComponent,
+    ProductodiesComponent,
+    ProductoonceComponent,
+    ProductodoceComponent
   ],
   imports: [
     BrowserModule,
