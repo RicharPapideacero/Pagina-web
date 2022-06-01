@@ -12,6 +12,11 @@ import { ProductunoComponent } from './Ejemplos productos/productuno/productuno.
 import { ProductdosComponent } from './Ejemplos productos/productdos/productdos.component';
 import { ProducttresComponent } from './Ejemplos productos/producttres/producttres.component';
 import { ProductcuatroComponent } from './Ejemplos productos/productcuatro/productcuatro.component';
+import { ProductcincoComponent } from './Ejemplos productos/productcinco/productcinco.component';
+import { ProductseisComponent } from './Ejemplos productos/productseis/productseis.component';
+import { ProductsieteComponent } from './Ejemplos productos/productsiete/productsiete.component';
+import { ProductochoComponent } from './Ejemplos productos/productocho/productocho.component';
+import { IniciosesionComponent } from './iniciosesion/iniciosesion.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +28,12 @@ import { ProductcuatroComponent } from './Ejemplos productos/productcuatro/produ
     ProductunoComponent,
     ProductdosComponent,
     ProducttresComponent,
-    ProductcuatroComponent
+    ProductcuatroComponent,
+    ProductcincoComponent,
+    ProductseisComponent,
+    ProductsieteComponent,
+    ProductochoComponent,
+    IniciosesionComponent
   ],
   imports: [
     BrowserModule,

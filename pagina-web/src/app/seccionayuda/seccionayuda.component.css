@@ -47,3 +47,16 @@ body {
     display: flex;
   }
  
+  .izquierdaarriba{
+    height: 49;
+    width: 49%;
+  }
+  
+  .derechaarriba{
+    background-size: cover;
+    background-position: center;
+    height: 49;
+    width: 49%;
+  }
+  
+  
