@@ -252,3 +252,14 @@ background-color:#ea4c89
 }
 }
 
+.searchi{
+  width: 300%;
+  background: #434e59;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 6px solid #1f53c5;
+  font-family: 'calibri';
+
+
+}
