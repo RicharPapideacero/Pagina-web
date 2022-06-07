@@ -1,0 +1,31 @@
+<div>
+    <input type="text" name="nombreproducto" [(ngModel)]="nombreproducto">
+    <button (click)="buscar()">Buscar</button>
+</div>
+<div *ngIf="hayerror">
+    no se encontro error {{nombreproducto}}
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>img</th>
+                <th>nombreproductos</th>
+                <th>descripcion</th>
+                <th>cantidadexistencia</th>
+                <th>cantidadcomprap</th>
+                <th>categoria</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let p of produc">
+            <th>nombreproducto.idProducto</th>
+            <th>nombreproducto.DireccionProducto</th>
+            <th>nombreproducto.NombreProducto.common</th>
+            <th>nombreproducto.DescripcionProducto</th>
+            <th>nombreproducto.CantidadExistenciaP</th>
+            <th>nombreproducto.CantidadCompraP</th>
+            <th>nombreproducto.CategoriaProducto</th>
+        </tr>
+    </table>
+</div>

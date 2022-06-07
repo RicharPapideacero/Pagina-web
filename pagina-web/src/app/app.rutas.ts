@@ -16,6 +16,8 @@ import { ProductonueveComponent } from "./Ejemplos productos/productonueve/produ
 import { ProductodiesComponent } from "./Ejemplos productos/productodies/productodies.component";
 import { ProductoonceComponent } from "./Ejemplos productos/productoonce/productoonce.component";
 import { ProductodoceComponent } from "./Ejemplos productos/productodoce/productodoce.component";
+import { HTTPComponent } from "./http/http.component";
+
 const app_routes: Routes = [
     {path: 'inicio', component:IndexComponent},
     {path: 'seccionayuda', component:SeccionayudaComponent},
@@ -32,6 +34,7 @@ const app_routes: Routes = [
     {path: 'Display LCD Gráfica 84 x 84 Nokia 5110', component:ProductodiesComponent},
     {path: '74HC148N CMOS Codificador Octal 8 a 3 Lineas', component:ProductoonceComponent},
     {path: '2SD1384 Pequeña Señal', component:ProductodoceComponent},
+    {path: 'httpPrueba', component:HTTPComponent},
     {path: '**', pathMatch:'full',redirectTo:'inicio'},
 ];
 

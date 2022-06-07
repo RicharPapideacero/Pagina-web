@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/productosindex', (req, res) => {
-    const sql = 'SELECT DireccionProducto,NombreProducto FROM producto';
+    const sql = 'SELECT idProducto,DireccionProducto,NombreProducto,DescripcionProducto,CantidadExistenciaP,CantidadCompraP,CategoriaProducto FROM producto';
     conexion.query(sql, (error, resultado) => {
         if (error) throw console.error();
 

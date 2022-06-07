@@ -21,6 +21,9 @@ import { ProductonueveComponent } from './Ejemplos productos/productonueve/produ
 import { ProductodiesComponent } from './Ejemplos productos/productodies/productodies.component';
 import { ProductoonceComponent } from './Ejemplos productos/productoonce/productoonce.component';
 import { ProductodoceComponent } from './Ejemplos productos/productodoce/productodoce.component';
+import { HTTPComponent } from './http/http.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,11 +44,14 @@ import { ProductodoceComponent } from './Ejemplos productos/productodoce/product
     ProductonueveComponent,
     ProductodiesComponent,
     ProductoonceComponent,
-    ProductodoceComponent
+    ProductodoceComponent,
+    HTTPComponent
   ],
   imports: [
     BrowserModule,
-    app_routing
+    app_routing,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
