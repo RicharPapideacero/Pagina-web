@@ -1,31 +1,29 @@
 <div>
-    <input type="text" name="nombreproducto" [(ngModel)]="nombreproducto">
-    <button (click)="buscar()">Buscar</button>
+   <div *ngIf="!Autocarga">
+       {{autosave()}}
+   </div>
+    
 </div>
 <div *ngIf="hayerror">
     no se encontro error {{nombreproducto}}
 </div>
 <div>
     <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>img</th>
-                <th>nombreproductos</th>
-                <th>descripcion</th>
-                <th>cantidadexistencia</th>
-                <th>cantidadcomprap</th>
-                <th>categoria</th>
+        
+        <div class ="arriba" *ngIf="!hayerror" id="arriba">
+            <div class="uno">
+            <tr *ngFor="let p of produc">
+                
+                <th class="titulo" id="titulo">{{p.NombreProducto}}</th>
+                <br>  <th><img src="{{p.FotoProducto}}" width="150" height="150"></th>
+                <th class="titulo" id="titulo">{{p.DescripcionProducto}}</th>
+                <th class="titulo" id="titulo">{{p.CantidadExistenciaP}}</th>
+                <th class="titulo" id="titulo">{{p.DireccionProducto}}</th>
+                <th class="titulo" id="titulo">{{p.CantidadCompraP}}</th>
+                <th class="titulo" id="titulo">{{p.CategoriaProducto}}</th>
             </tr>
-        </thead>
-        <tr *ngFor="let p of produc">
-            <th>nombreproducto.idProducto</th>
-            <th>nombreproducto.DireccionProducto</th>
-            <th>nombreproducto.NombreProducto.common</th>
-            <th>nombreproducto.DescripcionProducto</th>
-            <th>nombreproducto.CantidadExistenciaP</th>
-            <th>nombreproducto.CantidadCompraP</th>
-            <th>nombreproducto.CategoriaProducto</th>
-        </tr>
+        </div>
+        </div>
+        
     </table>
 </div>

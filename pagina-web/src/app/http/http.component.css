@@ -1,0 +1,25 @@
+.arriba {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.uno {
+    float: right;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-left: 800px;
+     
+}
+.tres{
+
+    height: 49;
+    width: 24%;
+    text-align: center;
+  
+  }
+  .titulo{
+ vertical-align:middle;
+  
+  }

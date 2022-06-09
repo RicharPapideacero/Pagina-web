@@ -16,14 +16,14 @@ export class IndexComponent implements OnInit {
 
 
 
-export interface producto{
-  idproducto: number;
-  Direccionproducto: String;
-  Nombreproducto: String;
-  Descripcionproducto:String;
-  CantidadExistenciap: number;
-  CantidadCompra: number;
-  Categoriaproducto:String;
-  Precio:number;
+export interface productos{
+  idProducto:          number;
+  NombreProducto:      string;
+  FotoProducto:        string;
+  DescripcionProducto: string;
+  CantidadExistenciaP: number;
+  DireccionProducto:   string;
+  CantidadCompraP:     number;
+  CategoriaProducto:   string;
 }
 

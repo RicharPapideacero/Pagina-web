@@ -1,3 +1,5 @@
+
+
 const { debug } = require('console');
 var mysql = require('mysql');
 const express = require('express');
@@ -8,7 +10,15 @@ const PORT = process.env.PORT || 3050;
 const app = express();
 app.use(bodyparser.json());
 
+app.use(function(req, res, next){
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    next();
+})
+
 var conexion = mysql.createConnection({
+    
     host: 'localhost',
     database: 'pagina_web',
     user: 'root',
@@ -34,14 +44,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/productosindex', (req, res) => {
-    const sql = 'SELECT idProducto,DireccionProducto,NombreProducto,DescripcionProducto,CantidadExistenciaP,CantidadCompraP,CategoriaProducto FROM producto';
+    const sql = 'SELECT * FROM productos';
     conexion.query(sql, (error, resultado) => {
         if (error) throw console.error();
 
-        resultado.forEach(resultado => {
-            res.json(resultado);
-        });
+        
+                res.json(resultado);
+   
         
     })
 }
+
 )

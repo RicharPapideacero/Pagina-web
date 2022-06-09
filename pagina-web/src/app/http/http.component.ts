@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { producto } from '../index/index.component';
+import { productos } from '../index/index.component';
 import { HTTPService } from './http.service';
 
 @Component({
@@ -13,19 +13,25 @@ export class HTTPComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
   nombreproducto: string = "";
   hayerror: boolean = false;
-  produc: producto[]=[]
+  Autocarga:boolean=false;
+  produc: productos[]=[]
 
+  autosave(){
+   this.buscar();
+   this.Autocarga=true;
+  }
   buscar() {
-    this.hayerror = false;
-    this.HttpServ.obtenerinfo(this.nombreproducto)
+    
+    this.HttpServ.obtenerinfo()
       .subscribe({
-        next: (resp) => {
+        next: (productos) => {
           this.hayerror = false;
-          console.log(resp[0].NombreProducto);
-          this.produc = this.produc;
+          console.log(productos);
+          this.produc=productos;
+        
         },
         error: (err) => {
           console.log('Error');
@@ -34,6 +40,7 @@ export class HTTPComponent implements OnInit {
           this.produc = [];
         }
       }
+      
       )
   }
 }

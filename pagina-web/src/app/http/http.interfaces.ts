@@ -7,12 +7,22 @@
 // These functions will throw an error if the JSON doesn't
 // match the expected interface, even if the JSON is valid.
 
-export interface Productoestru {
+// To parse this data:
+//
+//   import { Convert } from "./file";
+//
+//   const productos = Convert.toProductos(json);
+//
+// These functions will throw an error if the JSON doesn't
+// match the expected interface, even if the JSON is valid.
+
+export interface Productos {
     idProducto:          number;
-    DireccionProducto:   string;
     NombreProducto:      string;
+    FotoProducto:        string;
     DescripcionProducto: string;
     CantidadExistenciaP: number;
+    DireccionProducto:   string;
     CantidadCompraP:     number;
     CategoriaProducto:   string;
 }
@@ -20,12 +30,12 @@ export interface Productoestru {
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
 export class Convert {
-    public static toProductoestru(json: string): Productoestru {
-        return cast(JSON.parse(json), r("Productoestru"));
+    public static toProductos(json: string): Productos[] {
+        return cast(JSON.parse(json), a(r("Productos")));
     }
 
-    public static productoestruToJson(value: Productoestru): string {
-        return JSON.stringify(uncast(value, r("Productoestru")), null, 2);
+    public static productosToJson(value: Productos[]): string {
+        return JSON.stringify(uncast(value, a(r("Productos"))), null, 2);
     }
 }
 
@@ -162,12 +172,13 @@ function r(name: string) {
 }
 
 const typeMap: any = {
-    "Productoestru": o([
+    "Productos": o([
         { json: "idProducto", js: "idProducto", typ: 0 },
-        { json: "DireccionProducto", js: "DireccionProducto", typ: "" },
         { json: "NombreProducto", js: "NombreProducto", typ: "" },
+        { json: "FotoProducto", js: "FotoProducto", typ: "" },
         { json: "DescripcionProducto", js: "DescripcionProducto", typ: "" },
         { json: "CantidadExistenciaP", js: "CantidadExistenciaP", typ: 0 },
+        { json: "DireccionProducto", js: "DireccionProducto", typ: "" },
         { json: "CantidadCompraP", js: "CantidadCompraP", typ: 0 },
         { json: "CategoriaProducto", js: "CategoriaProducto", typ: "" },
     ], false),
